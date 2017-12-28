@@ -35,9 +35,12 @@ Code and guidelines for anonymous posting to a Facebook group using Google Drive
 ### 3: Create a form for users to submit their anonymous posts
 1. Add a new form called 'Anonymous Post Submission Form'.
 1. Give the form whatever Form Title you wish.
-1. Add a "short answer" question (I have "Please write a short subject line for your post" as the text, and I limited this field to 50 characters)
-1. Add a "paragraph" question (I have "Please write your post here" and I limited it to 3000 characters to make the moderators job less hellish)
-1. At the top right corner, to the right of the "Send" button, click on the vertical three dots, and select "Script editor". This will take you to...
+1. Add a "short answer" question (I have "Please write a short subject line for your post" as the text, and I limited this field to 50 characters).
+1. Add a "paragraph" question (I have "Please write your post here" and I limited it to 3000 characters to make the moderators job less hellish).
+1. Switch to the 'Responses' tab and click the vertical three dots next to the green 'Create a spreadsheet' button. Choose 'Select response destination'.
+1. Choose 'Select existing spreadsheet'.
+1. Choose the 'Data Storage' sheet.
+1. Finally, at the top right corner of the form, to the right of the "Send" button, click on the vertical three dots, and select "Script editor". This will take you to...
 
 ### 4: Create a script to send user submissions to moderators for moderation
 1. In the script editor, replace all of the code in Code.gs file with the code found in `google-scripts/member-post-submission.js`.
@@ -47,6 +50,7 @@ Code and guidelines for anonymous posting to a Facebook group using Google Drive
     1. Enter the email addresses of the moderators who would like to get notified when a new post is submitted. Each of these people will get an email whenever someone submits a post.
 1. Leave this script open, and proceed to... 
 
+### 5: Create a form where admins can moderate submissions
 
 
 
