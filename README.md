@@ -33,7 +33,7 @@ Code and guidelines for anonymous posting to a Facebook group using Google Drive
 (Just use the date I supplied for Last Refresh. It will automatically be updated anyway later on.)
 
 ### 3: Create a form for users to submit their anonymous posts
-1. Add a new form called 'Anonymous Post Submission Form'.
+1. Add a new form called 'Anonymous Post Submission Form'. This URL is eventually shared with the members in your group.
 1. Give the form whatever Form Title you wish.
 1. Add a "short answer" question (I have "Please write a short subject line for your post" as the text, and I limited this field to 50 characters).
 1. Add a "paragraph" question (I have "Please write your post here" and I limited it to 3000 characters to make the moderators job less hellish).
@@ -51,6 +51,9 @@ Code and guidelines for anonymous posting to a Facebook group using Google Drive
 1. Leave this script open, and proceed to... 
 
 ### 5: Create a form where admins can moderate submissions
+1. Add a new form called 'Moderator Post Submission Form'. This form MUST be kept private. It is technically a publicly accessible link, but should be kept to moderator use only.
+1. Add a single "Checkboxes" field and don't give it any values. Call it whatever you'd like (I used "Posts waiting for moderation").
+1. At the top right corner of the form, to the right of the "Send" button, click on the vertical three dots, and select "Script editor".
 
 
 
