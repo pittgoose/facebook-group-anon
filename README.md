@@ -26,7 +26,7 @@ Code and guidelines for anonymous posting to a Facebook group using Google Drive
 #|A | B
 --- | --- | ---
 1 | User Token | `your user token`
-2 | Last Refresh | 2017-12-10T11:31:45+02:00
+2 | Last Refresh | 2016-12-10T11:31:45+02:00
 3 | App ID | `your App ID`
 4 | App Secret | `your App Secret`
 5 | Group ID | `your Group Id`
