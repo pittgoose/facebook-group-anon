@@ -8,7 +8,7 @@ function populateAdminForm() {
     var dataStorageSheet = SpreadsheetApp.getActive();
     var formSubmissionsSheet = dataStorageSheet.getSheetByName('Form Responses 1');
 
-    var allRows = formSubmissionsSheet.getRange('A2:C').getValues();
+    var allRows = formSubmissionsSheet.getRange('B2:C').getValues();
 
     var anonPosts = [];
 

@@ -55,10 +55,36 @@ I'm not going to charge for this, but I did spend quite a bit of time on it and 
     1. Enter the email addresses of the moderators who would like to get notified when a new post is submitted. Each of these people will get an email whenever someone submits a post.
 1. Leave this script open, and proceed to... 
 
-### 5: Create a form where admins can moderate submissions
-1. Add a new form called 'Moderator Post Submission Form'. This form MUST be kept private. It is technically a publicly accessible link, but should be kept to moderator use only.
-1. Add a single "Checkboxes" field and don't give it any values. Call it whatever you'd like (I used "Posts waiting for moderation").
-1. At the top right corner of the form, to the right of the "Send" button, click on the vertical three dots, and select "Script editor".
+### 5: Create 2 forms where admins can moderate submissions
+1. Add a new form called 'Moderator Post Submission Form' and another form called 'Moderator Post Deletion Form'. These forms MUST be kept private. They are technically publicly accessible links, but should be kept to moderator use only.
+1. For both of these forms:
+    1. Add a single "Checkboxes" field and don't give it any values. Call it whatever you'd like (I used "Posts waiting for moderation/deletion").
+    1. Click on the preview (eye icon) button at the top right in order to see the finished form.
+    1. Here's a bit of a tricky part: right click on the title of the question and click 'Inspect Element'.
+    1. Search the source of the page for 'data-item-id'. Hang onto the number next to this value as you will need it in the next section. This is the postsCheckboxItD.
+    1. Back in the form editor tab, look in the URL and grab the Form ID. It is in between `d/` and `/edit` (ex: `https://docs.google.com/forms/d/[your-id-is-this]/edit`).
+
+### 6: Create a script to populate the moderator form
+1. In the Data Storage spreadsheet, click the Tools menu and choose the Script editor.
+1. Replace all of the code in the Code.gs file with the code found in `google-scripts/populate-admin-form.js`.
+1. For each of the forms in step 5, fill in the corresponding values in lines 2-3 and 5-6 of this script.
+1. Save the script.
+1. Click Edit > Current Project Triggers
+1. Add 2 new triggers:
+    1. Time-driven, Minutes timer, Every minute
+    1. From spreadsheet, On change
+1. Save these, and you will be asked to grant the script access to several google services. Accept all of them.
+
+### 7: Go back and finish up the user submission form
+1. Back in the script editor for the Anon Post Submission Form, fill in the value on line 4 for `moderatorFormId` with the form ID you got in step 5.2.v.
+1. Add a new trigger:
+    1. From form, On form submit
+1. Save the trigger, and you will be asked to grant the script access to several google services. Accept all of them.
+
+### 8: Create a script attached to the Admin Submission form to post submission to the Facebook Group
+
+
+### 9: Create a script attached to the Admin Deletion form to delete submissions from the queue 
 
 
 
