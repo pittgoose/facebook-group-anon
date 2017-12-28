@@ -30,6 +30,7 @@ Code and guidelines for anonymous posting to a Facebook group using Google Drive
 3 | App ID | `your App ID`
 4 | App Secret | `your App Secret`
 5 | Group ID | `your Group Id`
+
 (Just use the date I supplied for Last Refresh. It will automatically be updated anyway later on.)
 
 ### 3: Create a form for users to submit their anonymous posts
