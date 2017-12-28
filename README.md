@@ -1,5 +1,9 @@
 # facebook-group-anon
-Code and guidelines for anonymous posting to a Facebook group using Google Drive
+Code and guidelines for anonymous posting to a Facebook group using Google Drive.
+
+I'm not going to charge for this, but I did spend quite a bit of time on it and would love contributions. So please, [PWYW](https://en.wikipedia.org/wiki/Pay_what_you_want) ($5 recommended).
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T7B8GJUUWWGGE)
 
 ## Background and requirements
 * You need to be an administrator of the Facebook group you are doing this for.
