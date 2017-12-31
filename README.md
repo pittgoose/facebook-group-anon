@@ -77,18 +77,27 @@ I'm not going to charge for this, but I did spend quite a bit of time on it and 
 
 ### 7: Go back and finish up the user submission form
 1. Back in the script editor for the Anon Post Submission Form, fill in the value on line 4 for `moderatorFormId` with the form ID you got in step 5.2.v.
+1. Click Edit > Current Project Triggers
 1. Add a new trigger:
     1. From form, On form submit
 1. Save the trigger, and you will be asked to grant the script access to several google services. Accept all of them.
 
 ### 8: Create a script attached to the Admin Submission form to post submission to the Facebook Group
-
+1. In the 'Moderator Post Submission Form', click the vertical three dots in the header and open the script editor.
+1. In the menu, click on 'Resources > Libraries...' to open the external libraries pane.
+1. In the 'Add a library' section, add 'MHMchiX6c1bwSqGM1PZiW_PxhMjh3Sh48' and click Add. Then click Save.
+1. Replace all of the code in the Code.gs file with the code found in `google-scripts/admin-post-to-group.js`.
+1. Replace the spreadsheet ID value in line 4 for 'dataStorageSheet' with the ID of the Data Storage sheet. (You've done this before in previous steps.)
+1. Click Edit > Current Project Triggers
+1. Add a new trigger:
+    1. From form, On form submit
+1. Save the trigger, and you will be asked to grant the script access to several google services. Accept all of them.
 
 ### 9: Create a script attached to the Admin Deletion form to delete submissions from the queue 
-
-
-
-
+1. For the 'Moderator Post Deletion Form', follow the same instructions as the previous step, skipping steps 2 and 3 (adding the Moment library), and in step 4 taking the code from `google-scripts/admin-delete-from-queue.js`
+1. The form in step 8 will post the submissions to the Facebook group. 
+1. The form in this step removes posts from the queue if the moderators feel it should not be posted.
+1. (An added step I took was to change the color of the post deletion form to red so that it's understood that it's a different action.)
 
 
 

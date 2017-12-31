@@ -19,5 +19,5 @@ function sendPostToModeratorEmail(formResponses) {
 
     MailApp.sendEmail(moderatorEmails.join(','), 'New Anon Post: ' + userInputs.subject,
         'Subject: ' + userInputs.subject + '\n\nPost:\n' + userInputs.post
-        + '\n------\nLink to portal: https://goo.gl/forms/' + moderatorFormId);
+        + '\n------\nLink to approval form: https://docs.google.com/forms/d/' + moderatorFormId);
 }
